@@ -4,17 +4,17 @@ public class Booking {
     protected int day;
     protected int month;
     protected int year;
-    protected boolean booked;
     protected String username;
+    protected String password;
 
-    public Booking(int roomNumber, int capacity, int day, int month, int year, boolean booked, String username) {
+    public Booking(int roomNumber, int capacity, int day, int month, int year, String username, String password) {
         this.capacity = capacity;
         this.roomNumber = roomNumber;
         this.day = day;
         this.month = month;
         this.year = year;
-        this.booked = booked;
         this.username = username;
+        this.password = password;
     }
 
     public int getCapacity() {
@@ -57,19 +57,19 @@ public class Booking {
         this.year = year;
     }
 
-    public boolean isBooked() {
-        return booked;
-    }
-
-    public void setBooked(boolean booked) {
-        this.booked = booked;
-    }
-
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

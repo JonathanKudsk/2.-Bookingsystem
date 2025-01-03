@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TextUI {
@@ -19,6 +20,12 @@ public class TextUI {
             if (input.equalsIgnoreCase("Y")) return true;
             if (input.equalsIgnoreCase("N")) return false;
             displayMsg("Ugyldigt input. Prøv igen.");
+        }
+    }
+
+    public void displayAvailableRooms(ArrayList<Room> availebleRooms){
+        for (Room room : availebleRooms) {
+            displayMsg(room.toString());
         }
     }
 }
